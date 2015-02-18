@@ -17,7 +17,7 @@ autocmd BufNewFile,BufRead,BufEnter *.js,*.html noremap <c-l> oconsole.log( "<C-
 " tab_completion.vim
 " vim.org tip
 " Allows tab-completion when not at the beginning of a line.
-function InsertTabWrapper()
+function! InsertTabWrapper()
       let col = col('.') - 1
       if !col || getline('.')[col - 1] !~ '\k'
           return "\<tab>"
