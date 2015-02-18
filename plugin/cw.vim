@@ -96,7 +96,7 @@ augroup END
 " support.vim
 command! D Explore %:h
 command! -range -nargs=1 Flop call RFlop( "<args>" )
-/gmmand! FixNewlines %s/
+command! FixNewlines %s/
 command! -range -nargs=1 S call SubSub( "<args>" )
 command! -range -nargs=1 Flop S/^(.*?)(\\s*)<args>(\\s*)(.*?)$/\\4\\2<args>\\3\\1
 command! ValPhp call ValPhp()
